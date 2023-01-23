@@ -1,27 +1,30 @@
-# Feature for AdminJS
+# @adminjs/leaflet
 
-This is a feature template.
+This is an official feature for [AdminJS](https://adminjs.co) which integrates Leaflet for your resources.
 
 ## AdminJS
 
 AdminJS is an automatic admin interface which can be plugged into your application. You, as a developer, provide database models (like posts, comments, stores, products or whatever else your application uses), and AdminJS generates UI which allows you (or other trusted users) to manage content.
 
-Check out the example application with mongo and postgres models here: https://admin-bro-example-app-staging.herokuapp.com/admin
+Check out our demo application: https://demo.adminjs.co
 
-Or visit [AdminJS](https://github.com/SoftwareBrothers/adminjs) github page.
+Or visit [AdminJS](https://github.com/SoftwareBrothers/adminjs) GitHub page.
 
 ## Usage
 
+Please check out [@adminjs/leaflet feature documentation](https://docs.adminjs.co/basics/features/leaflet)
+
+You can also find an example in `example-app` folder of feature's [GitHub repository](https://github.com/SoftwareBrothers/adminjs-leaflet).
 
 ## License
 
-AdminJS is Copyright © 2022 SoftwareBrothers.co. It is free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.md) file.
+AdminJS is copyrighted © 2023 rst.software. It is a free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.md) file.
 
-## About SoftwareBrothers.co
+## About rst.software
 
-<img src="https://softwarebrothers.co/assets/images/software-brothers-logo-full.svg" width=240>
+<img src="https://pbs.twimg.com/profile_images/1367119173604810752/dKVlj1YY_400x400.jpg" width=150>
 
 We’re an open, friendly team that helps clients from all over the world to transform their businesses and create astonishing products.
 
-* We are available for [hire](https://softwarebrothers.co/contact).
-* If you want to work for us - checkout the [career page](https://softwarebrothers.co/career).
+* We are available for [hire](https://www.rst.software/estimate-your-project).
+* If you want to work for us - check out the [career page](https://www.rst.software/join-us).

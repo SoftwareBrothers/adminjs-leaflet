@@ -1,9 +1,15 @@
-/**
- * @module @adminjs/example-feature
- * @subcategory Features
- * @section modules
- */
+import { leafletSingleMarkerMapFeature } from './single-marker.feature';
+import { leafletMultipleMarkersMapFeature } from './multiple-markers.feature';
 
-import feature from './feature';
+export * from './single-marker.feature';
+export * from './multiple-markers.feature';
+export * from './utils';
+export * from './types';
+export * from './components/utils';
 
-export default feature;
+const features = {
+  leafletSingleMarkerMapFeature,
+  leafletMultipleMarkersMapFeature,
+};
+
+export default features;
