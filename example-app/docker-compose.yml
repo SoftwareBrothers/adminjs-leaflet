@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  adminjs_leaflet:
+    container_name: adminjs-leaflet
+    image: postgis/postgis:14-3.3
+    environment:
+      - POSTGRES_DB=adminjs
+      - POSTGRES_USER=adminjs
+      - POSTGRES_PASSWORD=adminjs
+    ports:
+      - "5432:5432"
+    volumes:
+      - adminjs_leaflet_db:/var/lib/postgresql/data
+
+volumes:
+  adminjs_leaflet_db:
