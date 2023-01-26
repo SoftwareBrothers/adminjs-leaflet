@@ -37,7 +37,6 @@ export const leafletMultipleMarkersMapFeature = ({
   markerOptions,
   mapProperty,
 }: LeafletMultipleMarkersMapFeatureConfig): FeatureType => {
-  bundleComponent(componentLoader, 'LeafletMultipleMarkersMap');
   const multipleMarkersComponent = bundleComponent(componentLoader, 'LeafletMultipleMarkersMapPropertyComponent');
 
   return buildFeature({

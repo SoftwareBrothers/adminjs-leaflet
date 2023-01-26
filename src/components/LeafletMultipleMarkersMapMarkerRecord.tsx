@@ -75,14 +75,16 @@ const LeafletMultipleMarkersMapMarkerRecord: React.FC<LeafletMultipleMarkersMapM
           alignItems="center"
         >
           <Text mb="md">{marker.content}</Text>
-          <Box flex width="100%" justifyContent="flex-end">
-            <Button onClick={handleEdit} size="icon" mr="sm">
-              <Icon icon="Edit" size={16} />
-            </Button>
-            <Button onClick={handleDelete} size="icon" variant="danger">
-              <Icon icon="TrashCan" size={16} />
-            </Button>
-          </Box>
+          {marker.isEditable && (
+            <Box flex width="100%" justifyContent="flex-end">
+              <Button onClick={handleEdit} size="icon" mr="sm">
+                <Icon icon="Edit" size={16} />
+              </Button>
+              <Button onClick={handleDelete} size="icon" variant="danger">
+                <Icon icon="TrashCan" size={16} />
+              </Button>
+            </Box>
+          )}
         </Box>
       </Popup>
     </Marker>

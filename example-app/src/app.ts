@@ -3,19 +3,16 @@
 /* eslint-disable import/first */
 // eslint-disable-next-line import/newline-after-import
 import 'reflect-metadata';
+import leafletFeatures, { getLeafletDist } from '@adminjs/leaflet';
 
 import dotenv from 'dotenv';
 dotenv.config({ path: `${process.cwd()}/.env` });
-
-import path from 'path';
 
 import AdminJS, { ComponentLoader } from 'adminjs';
 import Plugin from '@adminjs/express';
 import * as Adapter from '@adminjs/typeorm';
 import express from 'express';
 import cors from 'cors';
-
-import leafletFeatures, { getLeafletDist } from '../../src';
 
 import datasource from './db/datasource';
 import { Marker } from './db/marker.entity';

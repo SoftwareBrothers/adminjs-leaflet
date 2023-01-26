@@ -41,7 +41,6 @@ export const leafletSingleMarkerMapFeature = ({
   mapProps,
   tileProps,
 }: LeafletSingleMarkerMapFeatureConfig): FeatureType => {
-  bundleComponent(componentLoader, 'LeafletSingleMarkerMap');
   const singleMarkerComponent = bundleComponent(componentLoader, 'LeafletSingleMarkerMapPropertyComponent');
 
   return buildFeature({

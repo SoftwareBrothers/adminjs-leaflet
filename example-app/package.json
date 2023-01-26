@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@adminjs/express": "^5.1.0",
+    "@adminjs/leaflet": "^1.0.0",
     "@adminjs/typeorm": "^4.0.0",
     "adminjs": "^6.8.1",
     "cors": "^2.8.5",
