@@ -33,6 +33,7 @@
     }
   },
   "peerDependencies": {
+    "@adminjs/design-system": "^3.1.6",
     "adminjs": "^6.8.1"
   },
   "devDependencies": {

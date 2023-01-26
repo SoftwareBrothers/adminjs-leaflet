@@ -3,7 +3,7 @@ import { leafletMultipleMarkersMapFeature } from './multiple-markers.feature';
 
 export * from './single-marker.feature';
 export * from './multiple-markers.feature';
-export * from './utils';
+export { getLeafletDist, ensureFormat, bundleComponent } from './utils';
 export * from './types';
 export * from './components/utils';
 
