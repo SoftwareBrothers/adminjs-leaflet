@@ -3,8 +3,8 @@ import { buildFeature, ComponentLoader, FeatureType } from 'adminjs';
 import type { MapOptions } from 'leaflet';
 import type { TileLayerProps } from 'react-leaflet';
 
-import { MarkerPaths } from './types';
-import { bundleComponent } from './utils';
+import { MarkerPaths } from './types.js';
+import { bundleComponent } from './utils/index.js';
 
 export type LeafletMultipleMarkersMapFeatureConfig = {
   /**

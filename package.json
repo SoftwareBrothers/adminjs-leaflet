@@ -1,8 +1,13 @@
 {
   "name": "@adminjs/leaflet",
   "version": "1.0.1",
-  "main": "lib/index.js",
-  "types": "types/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./build/index.js",
+      "types": "./types/index.d.ts"
+    }
+  },
   "private": false,
   "repository": "git@github.com:SoftwareBrothers/adminjs-leaflet.git",
   "author": "Rafal Dziegielewski <rafal.dzieg@gmail.com>",
