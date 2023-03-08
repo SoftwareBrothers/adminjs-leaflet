@@ -1,15 +1,10 @@
-import React, { useCallback, memo, useEffect, useState, useMemo } from 'react';
-import {
-  BasePropertyProps,
-  ApiClient,
-  RecordJSON,
-  ActionAPIParams,
-  RecordActionAPIParams,
-  ResourceActionParams,
-} from 'adminjs';
 import { ValueGroup } from '@adminjs/design-system';
+import {
+  ActionAPIParams, ApiClient, BasePropertyProps, RecordActionAPIParams, RecordJSON, ResourceActionParams,
+} from 'adminjs';
+import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
 
-import LeafletMultipleMarkersMap from './LeafletMultipleMarkersMap';
+import LeafletMultipleMarkersMap from './LeafletMultipleMarkersMap.js';
 
 const LeafletMultipleMarkersPropertyComponent: React.FC<
   BasePropertyProps

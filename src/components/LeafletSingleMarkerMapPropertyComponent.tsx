@@ -1,8 +1,8 @@
-import React, { useCallback, useMemo, memo } from 'react';
-import { BasePropertyProps } from 'adminjs';
 import { ValueGroup } from '@adminjs/design-system';
+import { BasePropertyProps } from 'adminjs';
+import React, { memo, useCallback, useMemo } from 'react';
 
-import LeafletSingleMarkerMap from './LeafletSingleMarkerMap';
+import LeafletSingleMarkerMap from './LeafletSingleMarkerMap.js';
 
 const LeafletSingleMarkerPropertyComponent: React.FC<BasePropertyProps> = (props) => {
   const { property, record, where, onChange } = props;

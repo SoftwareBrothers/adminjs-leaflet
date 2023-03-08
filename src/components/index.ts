@@ -1,12 +1,10 @@
-export * from './utils';
-
-export { default as LeafletMultipleMarkersMap } from './LeafletMultipleMarkersMap';
-export { default as LeafletMultipleMarkersMapMarkerRecord } from './LeafletMultipleMarkersMapMarkerRecord';
-export { default as LeafletMultipleMarkersMapModal } from './LeafletMultipleMarkersMapModal';
-export { default as LeafletMultipleMarkersMapNewMarker } from './LeafletMultipleMarkersMapNewMarker';
-export { default as LeafletMultipleMarkersMapPropertyComponent } from './LeafletMultipleMarkersMapPropertyComponent';
-
-export { default as LeafletSingleMarkerMap } from './LeafletSingleMarkerMap';
-export { default as LeafletSingleMarkerMapMarkerRecord } from './LeafletSingleMarkerMapMarkerRecord';
-export { default as LeafletSingleMarkerMapNewMarker } from './LeafletSingleMarkerMapNewMarker';
-export { default as LeafletSingleMarkerMapPropertyComponent } from './LeafletSingleMarkerMapPropertyComponent';
+export { default as LeafletMultipleMarkersMap } from './LeafletMultipleMarkersMap.js';
+export { default as LeafletMultipleMarkersMapMarkerRecord } from './LeafletMultipleMarkersMapMarkerRecord.js';
+export { default as LeafletMultipleMarkersMapModal } from './LeafletMultipleMarkersMapModal.js';
+export { default as LeafletMultipleMarkersMapNewMarker } from './LeafletMultipleMarkersMapNewMarker.js';
+export { default as LeafletMultipleMarkersMapPropertyComponent } from './LeafletMultipleMarkersMapPropertyComponent.js';
+export { default as LeafletSingleMarkerMap } from './LeafletSingleMarkerMap.js';
+export { default as LeafletSingleMarkerMapMarkerRecord } from './LeafletSingleMarkerMapMarkerRecord.js';
+export { default as LeafletSingleMarkerMapNewMarker } from './LeafletSingleMarkerMapNewMarker.js';
+export { default as LeafletSingleMarkerMapPropertyComponent } from './LeafletSingleMarkerMapPropertyComponent.js';
+export * from './utils/index.js';

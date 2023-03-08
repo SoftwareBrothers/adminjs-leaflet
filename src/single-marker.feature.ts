@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import { buildFeature, FeatureType } from 'adminjs';
 
-import { LeafletFeatureCommonConfig, MarkerPaths } from './types';
-import { bundleComponent, ensureFormat } from './utils';
+import { LeafletFeatureCommonConfig, MarkerPaths } from './types.js';
+import { bundleComponent, ensureFormat } from './utils/index.js';
 
 export type LeafletSingleMarkerMapFeatureConfig = LeafletFeatureCommonConfig & {
   /**
