@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "target": "esnext",
     "esModuleInterop": true,
     "jsx": "react",
     "declaration": true,
