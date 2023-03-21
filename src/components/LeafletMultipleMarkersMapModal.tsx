@@ -8,7 +8,7 @@ import {
   ResourceJSON, useRecord, useTranslation,
 } from 'adminjs';
 import React, { useCallback, useMemo } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import type { LeafletMultipleMarkersMapFeatureConfig } from '../multiple-markers.feature.js';
 
