@@ -1,23 +1,16 @@
 /* eslint-disable max-len */
-import React, { useMemo, useCallback } from 'react';
 import {
-  RecordJSON,
-  ResourceJSON,
-  BasePropertyComponent,
-  useTranslation,
-  useRecord,
-  PropertyPlace,
-} from 'adminjs';
-import {
-  Box,
-  DrawerContent,
-  DrawerFooter,
-  Button,
-  Modal,
+  Box, Button, DrawerContent,
+  DrawerFooter, Modal,
 } from '@adminjs/design-system';
-import styled from 'styled-components';
+import {
+  BasePropertyComponent, PropertyPlace, RecordJSON,
+  ResourceJSON, useRecord, useTranslation,
+} from 'adminjs';
+import React, { useCallback, useMemo } from 'react';
+import { styled } from 'styled-components';
 
-import type { LeafletMultipleMarkersMapFeatureConfig } from '../multiple-markers.feature';
+import type { LeafletMultipleMarkersMapFeatureConfig } from '../multiple-markers.feature.js';
 
 const StyledModal = styled(Modal)`
   z-index: 9999;

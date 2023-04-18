@@ -1,15 +1,15 @@
 /* eslint-disable max-len */
-import React, { useState, useMemo, useCallback, memo } from 'react';
-import { MapContainer, TileLayer, TileLayerProps } from 'react-leaflet';
-import { LatLngExpression, MapOptions } from 'leaflet';
 import { PropertyPlace, RecordJSON, useResource } from 'adminjs';
+import { LatLngExpression, MapOptions } from 'leaflet';
+import React, { memo, useCallback, useMemo, useState } from 'react';
+import { MapContainer, TileLayer, TileLayerProps } from 'react-leaflet';
 
-import type { LeafletMultipleMarkersMapFeatureConfig } from '../multiple-markers.feature';
+import type { LeafletMultipleMarkersMapFeatureConfig } from '../multiple-markers.feature.js';
 
-import MarkerRecord from './LeafletMultipleMarkersMapMarkerRecord';
-import EditMarkerModal from './LeafletMultipleMarkersMapModal';
-import NewMarker from './LeafletMultipleMarkersMapNewMarker';
-import { defaultAttribution, defaultTileUrl, defaultZoom, defaultCenter } from './utils/defaults';
+import MarkerRecord from './LeafletMultipleMarkersMapMarkerRecord.js';
+import EditMarkerModal from './LeafletMultipleMarkersMapModal.js';
+import NewMarker from './LeafletMultipleMarkersMapNewMarker.js';
+import { defaultAttribution, defaultCenter, defaultTileUrl, defaultZoom } from './utils/defaults.js';
 
 export type MultipleMarkersLeafletMapProps = {
   mapRecord: RecordJSON;

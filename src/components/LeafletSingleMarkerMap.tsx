@@ -1,11 +1,11 @@
+import { flat, PropertyPlace, RecordJSON } from 'adminjs';
+import { LatLngExpression, MapOptions } from 'leaflet';
 import React, { useMemo } from 'react';
 import { MapContainer, TileLayer, TileLayerProps } from 'react-leaflet';
-import { LatLngExpression, MapOptions } from 'leaflet';
-import { flat, PropertyPlace, RecordJSON } from 'adminjs';
 
-import MarkerRecord from './LeafletSingleMarkerMapMarkerRecord';
-import NewMarker from './LeafletSingleMarkerMapNewMarker';
-import { defaultAttribution, defaultTileUrl, defaultZoom } from './utils/defaults';
+import MarkerRecord from './LeafletSingleMarkerMapMarkerRecord.js';
+import NewMarker from './LeafletSingleMarkerMapNewMarker.js';
+import { defaultAttribution, defaultTileUrl, defaultZoom } from './utils/defaults.js';
 
 export type SingleMarkerLeafletMapProps = {
   marker?: RecordJSON;

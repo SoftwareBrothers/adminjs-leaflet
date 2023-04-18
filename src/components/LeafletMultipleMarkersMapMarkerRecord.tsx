@@ -1,10 +1,10 @@
-import React, { useRef, useMemo, useCallback } from 'react';
+import { Box, Button, Icon, Text } from '@adminjs/design-system';
+import { flat, PropertyPlace, RecordJSON } from 'adminjs';
 import { Marker as HTMLMarker } from 'leaflet';
+import React, { useCallback, useMemo, useRef } from 'react';
 import { Marker, Popup } from 'react-leaflet';
-import { RecordJSON, flat, PropertyPlace } from 'adminjs';
-import { Box, Button, Text, Icon } from '@adminjs/design-system';
 
-import type { LeafletMultipleMarkersMapFeatureConfig } from '../multiple-markers.feature';
+import type { LeafletMultipleMarkersMapFeatureConfig } from '../multiple-markers.feature.js';
 
 export type LeafletMultipleMarkersMapMarkerRecordProps = {
   record: RecordJSON;

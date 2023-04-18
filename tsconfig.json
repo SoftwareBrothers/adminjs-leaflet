@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "target": "esnext",
     "esModuleInterop": true,
     "jsx": "react",
     "declaration": true,
@@ -10,8 +9,9 @@
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "noImplicitThis": true,
-    "moduleResolution": "node",
-    "module": "commonjs",
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
     "baseUrl": "./",
     "outDir": "lib",
     "declarationDir": "types",
