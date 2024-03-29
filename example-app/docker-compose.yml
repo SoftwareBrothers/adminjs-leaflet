@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=adminjs
       - POSTGRES_PASSWORD=adminjs
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - adminjs_leaflet_db:/var/lib/postgresql/data
 

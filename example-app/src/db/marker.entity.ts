@@ -1,7 +1,7 @@
 import { BaseEntity, Column, Entity, Index, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Point } from 'geojson';
 
-import type { Map as MapEntity } from './map.entity';
+import type { Map as MapEntity } from './map.entity.js';
 
 @Entity({ name: 'markers' })
 export class Marker extends BaseEntity {
