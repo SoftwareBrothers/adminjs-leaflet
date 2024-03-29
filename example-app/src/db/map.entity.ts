@@ -1,6 +1,6 @@
 import { BaseEntity, Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
-import type { Marker } from './marker.entity';
+import type { Marker } from './marker.entity.js';
 
 @Entity({ name: 'maps' })
 export class Map extends BaseEntity {

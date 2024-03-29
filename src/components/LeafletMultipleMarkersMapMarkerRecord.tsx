@@ -81,7 +81,7 @@ const LeafletMultipleMarkersMapMarkerRecord: React.FC<LeafletMultipleMarkersMapM
                 <Icon icon="Edit" size={16} />
               </Button>
               <Button onClick={handleDelete} size="icon" variant="danger">
-                <Icon icon="TrashCan" size={16} />
+                <Icon icon="Trash2" size={16} />
               </Button>
             </Box>
           )}

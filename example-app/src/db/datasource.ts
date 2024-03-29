@@ -1,7 +1,7 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
 
-import { Map as MapEntity } from './map.entity';
-import { Marker } from './marker.entity';
+import { Map as MapEntity } from './map.entity.js';
+import { Marker } from './marker.entity.js';
 
 const config: DataSourceOptions = {
   type: 'postgres' as const,

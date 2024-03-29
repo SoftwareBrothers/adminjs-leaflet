@@ -66,6 +66,7 @@ const LeafletMultipleMarkersPropertyComponent: React.FC<
       recordId: marker.id,
       resourceId: markerOptions.resourceId,
       actionName: 'delete',
+      method: 'post',
     });
 
     getMarkers();

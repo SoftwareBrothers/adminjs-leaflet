@@ -5,18 +5,15 @@
 import 'reflect-metadata';
 import leafletFeatures, { getLeafletDist } from '@adminjs/leaflet';
 
-import dotenv from 'dotenv';
-dotenv.config({ path: `${process.cwd()}/.env` });
-
 import AdminJS, { ComponentLoader } from 'adminjs';
 import Plugin from '@adminjs/express';
 import * as Adapter from '@adminjs/typeorm';
 import express from 'express';
 import cors from 'cors';
 
-import datasource from './db/datasource';
-import { Marker } from './db/marker.entity';
-import { Map as MapEntity } from './db/map.entity';
+import datasource from './db/datasource.js';
+import { Marker } from './db/marker.entity.js';
+import { Map as MapEntity } from './db/map.entity.js';
 
 const PORT = process.env.PORT ?? 8080;
 
@@ -25,13 +22,14 @@ AdminJS.registerAdapter({
   Resource: Adapter.Resource,
 });
 
+const componentLoader = new ComponentLoader();
+
 const start = async () => {
   await datasource.initialize();
 
-  const componentLoader = new ComponentLoader();
-
   const app = express();
   app.use(cors({ origin: '*' }));
+  app.use(express.static('public'));
   app.use(express.static(getLeafletDist()));
 
   const markerPaths = {
@@ -42,6 +40,7 @@ const start = async () => {
   };
 
   const admin = new AdminJS({
+    componentLoader,
     assets: {
       styles: ['/leaflet.css'],
     },
@@ -74,7 +73,6 @@ const start = async () => {
         }),
       ],
     }],
-    componentLoader,
     rootPath: '/',
   });
 

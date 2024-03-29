@@ -59,7 +59,7 @@ const LeafletMultipleMarkersMapNewMarker: React.FC<LeafletMultipleMarkersMapNewM
     >
       <Popup minWidth={150}>
         <Button onClick={handleCreate} size="md" variant="text" width="100%">
-          <Icon icon="Add" size={16} />
+          <Icon icon="PlusCircle" size={16} />
           {translateButton('create')}
         </Button>
       </Popup>
